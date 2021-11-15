@@ -1,0 +1,14 @@
+{
+  "name": "healthapi",
+  "version": "1.0.0",
+  "description": "API to retrieve info from GitHub to /health url",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
