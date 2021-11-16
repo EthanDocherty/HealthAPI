@@ -1,9 +1,5 @@
-var express = require('express');
-var app = express();
-
 const http = require('http');
 
-const hostname = 'localhost';
 const port = 3000;
 
 hash = require('child_process')
@@ -22,6 +18,5 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/health`);
-});
+server.listen(port);
+console.log(`Running on http://${port}/health`);
