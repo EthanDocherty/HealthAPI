@@ -1,16 +1,12 @@
 
 const http = require('http');
 
-const hostname = 'localhost';
 const port = 3000;
-
-hash = require('child_process')
-  .execSync('git rev-parse HEAD')
-  .toString();
 
 packagejson = require('./package.json');
 version = packagejson.version;
 apiname = packagejson.name;
+hash = process.env.GIT_COMMIT
   
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -21,6 +17,6 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/health`);
-});
+server.listen(port)
+console.log(`Server running at http://${port}/health`);
+
