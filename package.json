@@ -1,6 +1,6 @@
 {
   "name": "healthapi",
-  "version": "1.0.53",
+  "version": "1.0.8",
   "description": "API to retrieve info from GitHub to /health url",
   "main": "index.js",
   "scripts": {
