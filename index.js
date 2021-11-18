@@ -6,7 +6,7 @@ const port = 3000;
 packagejson = require('./package.json');
 version = packagejson.version;
 apiname = packagejson.name;
-hash = process.env.GIT_COMMIT
+hash = process.env.GIT_HASH;
   
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
