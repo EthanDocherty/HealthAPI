@@ -13,8 +13,8 @@ replacing "buildname:tag" with whatever you want (I use healthapi:latest) and ".
 (. will use whatever path you are running command prompt in)
 
 How to Run: 
-Simply run the command docker run -p 3000:3000 -d buildname:tag
-Replacing “buildname:tag” with the appropriate build name and tag (healthapi:latest for the automatic build)
+Simply run the command "docker run -p 3000:3000 -d buildname:tag"
+Replacing “buildname:tag” with the appropriate build name and tag (edocherty/healthapi:latest for the automatic build)
 
 Testing:
 The container with run the program outputting to the url http://localhost:3000/health
